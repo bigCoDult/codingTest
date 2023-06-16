@@ -1,37 +1,4 @@
-https://school.programmers.co.kr/learn/courses/30/lessons/120852
-Lv. 0	소인수분해 		80%	-	FALSE
-
-function solution(num) 
-{
-    let primeN;
-    let primeArr = [];
-    let flag = false
-    
-    for(let i = 0, p = 2, nw; i*i <= num; i++)
-        {
-            if ( num % p === 0 )
-            {
-                nw = p;
-                p++;
-            }
-                
-            for( let j = 0; j <= num; j++)
-            {
-                if ( (nw % primeArr[j]) === 0)
-                {
-                    flag = false;    
-                    break;
-                }
-                else 
-                    flag = true;    
-            }   
-            
-            if (flag == true)
-                primeArr.push(nw);
-        
-        }
-    return primeArr;
-}
+//0616
 
 https://school.programmers.co.kr/learn/courses/30/lessons/181849
 Lv. 0	문자열 정수의 합 		89%
@@ -135,10 +102,41 @@ function solution(arrInt)
 
 
 
+888888888888888888888880
+https://school.programmers.co.kr/learn/courses/30/lessons/120852
+Lv. 0	소인수분해 		80%	-	FALSE
 
-
-
-
+function solution(num) 
+{
+    let primeN;
+    let primeArr = [];
+    let flag = false
+    
+    for(let i = 0, p = 2, nw; i*i <= num; i++)
+        {
+            if ( num % p === 0 )
+            {
+                nw = p;
+                p++;
+            }
+                
+            for( let j = 0; j <= num; j++)
+            {
+                if ( (nw % primeArr[j]) === 0)
+                {
+                    flag = false;    
+                    break;
+                }
+                else 
+                    flag = true;    
+            }   
+            
+            if (flag == true)
+                primeArr.push(nw);
+        
+        }
+    return primeArr;
+}
 
 //0614
 
