@@ -1,9 +1,47 @@
-Lv. 0	rny_string 		89%
-Lv. 0	문자 리스트를 문자열로 변환하기 		89%
-Lv. 0	문자열 바꿔서 찾기 		89%
 Lv. 0	접두사인지 확인하기 		89%
 Lv. 0	n개 간격의 원소들 		89%
 Lv. 0	접미사인지 확인하기 		89%
+
+//0621
+https://school.programmers.co.kr/learn/courses/30/lessons/181863
+Lv. 0	rny_string 		89%
+배운것
+    삼항연산자와 ruduce의 return
+        function solution(rmStr) 
+        {
+            return rmStr.split('').reduce((str1, checkM) => 
+            {
+                return checkM === 'm' ? str1 + 'rn' : str1 + checkM;
+            }, '');
+        }
+    .replaceAll(/m/g, "rn");
+    리플레이스 메소드
+    
+function solution(rnStr) 
+{
+  return rnStr.replaceAll(/m/g, "rn");
+}
+
+https://school.programmers.co.kr/learn/courses/30/lessons/181941
+Lv. 0	문자 리스트를 문자열로 변환하기 		89%
+
+function solution(arr) 
+{
+    return arr.join("");
+}
+
+https://school.programmers.co.kr/learn/courses/30/lessons/181864
+Lv. 0	문자열 바꿔서 찾기 		89%         includes
+배운것
+    Number() .split('') .reduce() .includes
+    의 컴비네이션
+
+function solution(str1, patn) 
+{
+    let i = 0;
+    return Number(str1.split('').reduce( (str2, ab) => 
+    {return ab == 'A' ? str2 + 'B' : str2 +'A';}, '').includes(patn));
+}
 
 //0619
 
@@ -31,7 +69,7 @@ Lv. 0	원하는 문자열 찾기 		89%
                 따라서 위 코드에서 new RegExp(pat, 'i')는 
                     문자열 pat를 대소문자 구분 없이 검색하기 위한 정규식 객체를 생성합니다.
 
-        reg1.test(str1) ? 1 : 0;
+        reg1.test(str1) ? 1 : 0; 삼항연산자
             test() 메서드는 
                 (정규식 객체)와 
                 (문자열)을 
