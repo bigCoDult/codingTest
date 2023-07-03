@@ -1,3 +1,31 @@
+Lv. 0	주사위 게임 1 		89%
+Lv. 0	부분 문자열 이어 붙여 문자열 만들기 		89% slice
+Lv. 0	문자열안에 문자열		89% includes
+Lv. 0	A 강조하기 		89%
+Lv. 0	홀짝 구분하기 		89%
+Lv. 0	제곱수 판별하기		89%
+
+https://school.programmers.co.kr/learn/courses/30/lessons/181940
+Lv. 0	문자열 곱하기 		89% repeat
+
+
+
+
+Lv. 0	첫 번째로 나오는 음수 		89% findIndex
+Lv. 0	이어 붙인 수 		89% String -> Number
+
+
+
+
+
+
+
+
+
+
+
+
+
 //0622
 
 https://school.programmers.co.kr/learn/courses/30/lessons/181906
@@ -297,24 +325,6 @@ function solution(arrInt)
     )   
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-888888888888888888888880
 https://school.programmers.co.kr/learn/courses/30/lessons/120852
 Lv. 0	소인수분해 		80%	-	FALSE
 
@@ -384,25 +394,6 @@ function solution(n, ctrlStr) {
         }
     return n;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 //sprint for 20230613
