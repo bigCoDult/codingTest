@@ -1,4 +1,2 @@
-import { isEmpty } from './index'
-
-console.log(isEmpty(true)) // false
-console.log(isEmpty(false)) // false
+// import { isEmpty } from './index'
+import {argumentsLength} from './ts0812'
