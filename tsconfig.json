@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    /** es6로 번역하겠다 **/
+    "target": "es2016",
+    /** node.js 모듈로 내보내겠다 **/
+    "module": "commonjs",
+    /** 문법을 엄격하게 적용하겠다 **/
+    "strict": true,
+    /** 에러를 만나면 번역하지 않겠다 **/
+    "noEmitOnError": true
+  }
+}
