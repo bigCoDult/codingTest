@@ -7,11 +7,12 @@
 // 배열의 길이가 0이면 빈 값으로 처리한다
 // 객체에 프로퍼티가 없으면 빈 값으로 처리한다.
 
-export const isEmpty = (value: any) => {
-    // boolean 은 빈 값이 아니다.
-    if (typeof value === 'boolean') {
-        return false
-    }
+import { isEmpty } from './index'
 
-    return true
-}
+describe('isEmpty함수에서', () => {
+    // boolean 은 빈 값이 아니다.
+    test('boolean 은 빈 값이 아니다', () => {
+        expect(isEmpty(true)).toBe(false);
+        expect(isEmpty(false)).toBe(false);
+    })
+})
