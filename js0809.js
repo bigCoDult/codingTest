@@ -20,6 +20,7 @@ function solution(numArr) {
     return numArr.findIndex(item => item < 0);
 }
 
+//필터로 다시 풀것
 function solution(numArr) {
     const regex = /-\d+/g;
     let index_of_minus=[-1];
