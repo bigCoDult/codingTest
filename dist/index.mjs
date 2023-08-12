@@ -1,5 +1,7 @@
-// index.js
+// index.ts
 var A = "hello";
+var B = "aaa";
 export {
-  A
+  A,
+  B
 };

@@ -1,3 +1,4 @@
+"use strict";
 var __defProp = Object.defineProperty;
 var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
 var __getOwnPropNames = Object.getOwnPropertyNames;
@@ -16,14 +17,17 @@ var __copyProps = (to, from, except, desc) => {
 };
 var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 
-// index.js
+// index.ts
 var hello_tsup_exports = {};
 __export(hello_tsup_exports, {
-  A: () => A
+  A: () => A,
+  B: () => B
 });
 module.exports = __toCommonJS(hello_tsup_exports);
 var A = "hello";
+var B = "aaa";
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
-  A
+  A,
+  B
 });

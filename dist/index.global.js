@@ -1,3 +1,4 @@
+"use strict";
 var _ = (() => {
   var __defProp = Object.defineProperty;
   var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
@@ -17,11 +18,13 @@ var _ = (() => {
   };
   var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 
-  // index.js
+  // index.ts
   var hello_tsup_exports = {};
   __export(hello_tsup_exports, {
-    A: () => A
+    A: () => A,
+    B: () => B
   });
   var A = "hello";
+  var B = "aaa";
   return __toCommonJS(hello_tsup_exports);
 })();
