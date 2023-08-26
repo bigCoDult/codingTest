@@ -5,6 +5,30 @@ Lv. 0	A 강조하기 		89%
 Lv. 0	홀짝 구분하기 		89%
 Lv. 0	제곱수 판별하기		89%
 
+//0826
+https://leetcode.com/problems/add-two-promises/
+Add Two Promises
+
+js 풀이
+const addTwoPromises = async function(promise1, promise2) {
+  return  await promise1 + await promise2 
+};
+
+ts 풀이
+interface PromiseArgs{
+  promise1:Promise<number>, 
+  promise2:Promise<number>
+};
+interface PromiseSum {
+  (arg:PromiseArgs):Promise<number>
+};
+
+const addTwoPromises:PromiseSum = async ({promise1, promise2}:PromiseArgs) => {
+  return  await promise1 + await promise2 
+};
+
+
+
 //0812
 //jest환경구축ing
 
